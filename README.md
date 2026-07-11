@@ -1,1 +1,1 @@
-# CSE-111.6
+# C Programming Lab
