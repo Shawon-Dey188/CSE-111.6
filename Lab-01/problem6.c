@@ -12,7 +12,10 @@ int main()
     printf("Division:%d\n",a/b);
     printf("Reminder:%d\n",(int)a % (int)b);
     int c= a>b ;
-    printf("%d",c);
-    
+    printf("%d\n",c);
+     int number;
+    printf("Enter the number= ");
+    scanf("%d", &number);
+    printf("Result: %d\n", number / 7);
     return 0;
 }
