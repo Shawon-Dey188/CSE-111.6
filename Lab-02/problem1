@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() 
+{
+    int grade;
+    
+    printf("Enter the value of grade = ");
+    scanf("%d", &grade);
+    
+    if (grade == 4) {
+        printf("%d is the excellent number\n", grade);
+    } 
+    else if (grade == 3) {
+        printf("%d is the good number\n", grade);
+    } 
+    else if (grade == 2) {
+        printf("%d is the satisfactory number\n", grade);
+    } 
+    else if (grade == 1) {
+        printf("%d is the passing number\n", grade);
+    } 
+    else {
+        printf("%d is the fail number\n", grade);
+    }
+    
+    return 0;
+}
