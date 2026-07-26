@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    // --- Part 1: Find the max number among three numbers ---
+    printf("--- Part 1: Max among three numbers ---\n");
+    int a = 10, b = 700, c = 1;
+    (a > b) ? ((a > c) ? printf("%d is the largest\n", a) : printf("%d is the largest\n", c)) 
+            : ((b > c) ? printf("%d is the largest\n", b) : printf("%d is the largest\n", c));
+    printf("\n");
+
+    // --- Part 2: Print Hello World 5 times ---
+    printf("--- Part 2: While loop (Hello World) ---\n");
+    int i1 = 1;
+    while (i1 <= 5) {
+        printf("Hello World\n");
+        i1++;
+    }
+    printf("\n");
+
+    // --- Part 3: Find max among two numbers ---
+    printf("--- Part 3: Max between two numbers ---\n");
+    int x = 10, y = 700;
+    (x > y) ? printf("%d is the largest\n", x) : printf("%d is the largest\n", y);
+    printf("\n");
+
+    // --- Part 4: Loop printing Hello World and i with final value ---
+    printf("--- Part 4: Loop with i increment ---\n");
+    int i2 = 1;
+    while (i2 <= 5) {
+        printf("Hello World\n");
+        i2++;
+        printf("%d\n", i2);
+    }
+    printf("Final Value of i: %d\n\n", i2);
+
+    // --- Part 5: Print odd numbers up to n ---
+    printf("--- Part 5: Print odd numbers up to n ---\n");
+    int i3 = 1, n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    
+    while (i3 <= n) {
+        if (i3 % 2 != 0) {
+            printf("%d\t", i3);
+        }
+        i3++;
+    }
+    printf("\n");
+
+    return 0;
+}
