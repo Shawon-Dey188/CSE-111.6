@@ -1,4 +1,5 @@
-#include<stdio.h> int main()
+#include<stdio.h> 
+int main()
 {
     int a;
     printf("Enter the value of a=");
