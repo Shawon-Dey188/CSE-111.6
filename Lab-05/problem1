@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num, firstDigit, lastDigit, sum;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    // 1. Last digit ber kora (Modulus operator দিয়ে)
+    lastDigit = num % 10;
+    
+    // 2. First digit ber kora (Loop chalye prothom digit e pouchana)
+    firstDigit = num;
+    while (firstDigit >= 10) {
+        firstDigit = firstDigit / 10;
+    }
+    
+    // 3. First ebong Last digit-er sum ber kora
+    sum = firstDigit + lastDigit;
+
+    printf("Sum of First and Last digit is: %d\n", sum);
+    
+    return 0;
+}
