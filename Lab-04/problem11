@@ -14,3 +14,19 @@ int main() {
     printf("Product of digits is: %d\n",product);
     return 0;
 }
+#include <stdio.h>
+
+int main() {
+    int num,digit,product = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    do {
+        digit = num % 10;   
+        product = product + digit; 
+        num = num / 10;     
+    } while (num > 0);
+
+    printf("Sum of digits is: %d\n",product);
+    return 0;
+}
